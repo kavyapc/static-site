@@ -10,5 +10,16 @@
     My Website
   </h1>
   <p> this is a story of web development</p>
+   <div id="message-box">Hello! I am unchanged.</div>
+<button id="magic-button"> Click me!</button>
 </body>
+   <script>
+      const button = document.getElementById("magic-button");
+const box = document.getElementById("message-box");
+// 2. Listen for a click on the button
+button.addEventListener("click", function() {
+// 3. When clicked, run this function:
+changeMessage();
+});
+   </script>
 </html>
